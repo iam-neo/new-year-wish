@@ -15,6 +15,7 @@ body {
   height: 300px;
 }
 
+
 #envelope > * {
   position: absolute;
   top: 0;
@@ -58,22 +59,33 @@ body {
   right: 15px;
   bottom: 5px;
   top: 105px;
-
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
     0px 1px 2px 0px rgba(0, 0, 0, 0.06);
   overflow: hidden;
   font-size: 16px;
 }
-h1 {
+
+#letter h1 {
   padding-top: 12px;
 }
-h1 span {
+
+#letter span {
   color: red;
 }
-p {
+
+#letter p {
   font-size: 17px;
-  padding: 2px;
+  padding: 20px;
   line-height: 20px;
+  text-align: justify;
+}
+
+#letter img {
+  background-size: cover;
+}
+
+a {
+  color: red;
 }
 #letter img {
   background-size: cover;
@@ -147,4 +159,23 @@ a {
 .text h1 {
   color: rgb(255, 255, 255);
   text-align: center;
+}
+
+/* Add media query for #letter */
+@media only screen and (max-width: 375px) {
+  #letter {
+    left: 10px;
+    right: 10px;
+    bottom: 5px;
+    top: 5px;
+    font-size: 14px;
+  }
+  #letter h1 {
+    font-size: 20px;
+  }
+  #letter p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 18px;
+  }
 }
