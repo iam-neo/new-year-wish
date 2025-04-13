@@ -18,7 +18,7 @@ function updateCountdown() {
   // Check if the countdown is over
   if (timeDifference <= 0) {
     clearInterval(countdownInterval);
-    window.location.href = 'https://www.magarnirmal.com.np/'; // Redirect to another webpage
+    window.location.href = 'new/index.html'; // Redirect to another webpage
   }
 }
 
