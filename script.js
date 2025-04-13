@@ -1,5 +1,5 @@
 // Set the target date and time for the countdown (format: year, monthIndex, day, hours, minutes, seconds)
-const targetDate = new Date('2025-14-14T00:00:00').getTime();
+const targetDate = new Date('2025-04-14T09:04:50').getTime();
 
 function updateCountdown() {
   const now = new Date().getTime();
@@ -18,7 +18,7 @@ function updateCountdown() {
   // Check if the countdown is over
   if (timeDifference <= 0) {
     clearInterval(countdownInterval);
-    window.location.href = 'new/index.html'; // Redirect to another webpage
+    window.location.href = 'https://www.magarnirmal.com.np/'; // Redirect to another webpage
   }
 }
 
